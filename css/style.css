@@ -1,6 +1,7 @@
 *{
     font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -19,7 +20,8 @@ h2{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: rgba(284,249,250,.45);
-    box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
+            box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
 }
 
 /*End my classes*/
@@ -33,7 +35,8 @@ h2{
     width:100%;
     z-index:1000;
     background-color: rgba(284,249,250,.45);
-    box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
+            box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
 }
 .navbar .navbar-brand{
     color: limegreen;
@@ -50,6 +53,8 @@ h2{
 }
 .navbar-light .navbar-nav .nav-link{
     color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     font-weight: bold;
 }
@@ -111,19 +116,27 @@ h2{
 }
 .carousel-caption .btn-primary{
     background-color: #007bff6e;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 .carousel-caption .btn-primary:hover{
     background-color:darkblue;
-    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+            transform: scale(1.1,1.1);
 }
 .carousel-caption .btn-success{
     background-color: #22ca276e;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 .carousel-caption .btn-success:hover{
     background-color:darkgreen;
-    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+            transform: scale(1.1,1.1);
 }
 .carousel-indicators li{
     width: 15px;
@@ -132,6 +145,8 @@ h2{
     margin-left: 5px;
     border-radius: 50%;
     cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 .carousel-indicators li:hover{
@@ -157,7 +172,8 @@ h2{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 725px;
-    box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
+            box-shadow: inset 5px 5px 185px 0px rgba(0,0,0,0.8);
 }
 .about .about-content .my-photo{
     background-color: rgba(4,6,21,1);
@@ -212,6 +228,8 @@ h2{
     line-height: 30px!important;
     background-color: rgba(4,6,21,1);
     color: limegreen;    
+    -webkit-transition: all .4s ease-in-out;    
+    -o-transition: all .4s ease-in-out;    
     transition: all .4s ease-in-out;
 }
 i.fa-facebook-f:hover{
@@ -271,10 +289,13 @@ i.fa-facebook-f:hover{
     left: 0;
     width:100%;
     height:100%;
-    box-shadow: inset 30px 30px 300px 50px rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 30px 30px 300px 50px rgba(0,0,0,0.8);
+            box-shadow: inset 30px 30px 300px 50px rgba(0,0,0,0.8);
     color: #fff;
     text-align: center;
     opacity:0;
+    -webkit-transition:all .6s ease-in-out;
+    -o-transition:all .6s ease-in-out;
     transition:all .6s ease-in-out;
     overflow:hidden;
     font-weight: bold;
@@ -283,18 +304,29 @@ i.fa-facebook-f:hover{
     opacity: 1;
 }
 .works .overlay-dad .overlay .overlay-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     height: 100%;
 }
 .works .overlay-dad .overlay .overlay-content h5{
     font-weight: bolder;
 }
 .works .overlay-dad .overlay .overlay-content div.spans{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 10px 0;
 }
 .works .overlay-dad .overlay .overlay-content div.spans .like{
@@ -302,6 +334,8 @@ i.fa-facebook-f:hover{
 }
 .works .overlay-dad .overlay .overlay-content a{
     color: #fff;
+    -webkit-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
     transition:all .2s ease-in-out;
 }
 .works .overlay-dad .overlay .overlay-content a:hover{
@@ -311,16 +345,30 @@ i.fa-facebook-f:hover{
 
 /*start kind animation*/
 .works .overlay-dad:hover .overlay .overlay-content h5{
-    animation: kind-animation .6s ease-in-out;
+    -webkit-animation: kind-animation .6s ease-in-out;
+            animation: kind-animation .6s ease-in-out;
     
+}
+
+@-webkit-keyframes kind-animation{
+    from{
+        -webkit-transform: translatey(-80px);
+                transform: translatey(-80px);
+    }
+    to{
+        -webkit-transform: translatey(0);
+                transform: translatey(0);
+    }
 }
 
 @keyframes kind-animation{
     from{
-        transform: translatey(-80px);
+        -webkit-transform: translatey(-80px);
+                transform: translatey(-80px);
     }
     to{
-        transform: translatey(0);
+        -webkit-transform: translatey(0);
+                transform: translatey(0);
     }
 }
 
@@ -328,16 +376,30 @@ i.fa-facebook-f:hover{
 
 /*start like animation*/
 .works .overlay-dad:hover  .overlay .overlay-content .like{
-    animation: like-animation .6s ease-in-out;
+    -webkit-animation: like-animation .6s ease-in-out;
+            animation: like-animation .6s ease-in-out;
     
+}
+
+@-webkit-keyframes like-animation{
+    from{
+        -webkit-transform: translatex(-80px);
+                transform: translatex(-80px);
+    }
+    to{
+        -webkit-transform: translatex(0);
+                transform: translatex(0);
+    }
 }
 
 @keyframes like-animation{
     from{
-        transform: translatex(-80px);
+        -webkit-transform: translatex(-80px);
+                transform: translatex(-80px);
     }
     to{
-        transform: translatex(0);
+        -webkit-transform: translatex(0);
+                transform: translatex(0);
     }
 }
 
@@ -345,16 +407,30 @@ i.fa-facebook-f:hover{
 
 /*start order animation*/
 .works .overlay-dad:hover  .overlay .overlay-content a:first-of-type{
-    animation: order-animation .6s ease-in-out;
+    -webkit-animation: order-animation .6s ease-in-out;
+            animation: order-animation .6s ease-in-out;
     
+}
+
+@-webkit-keyframes order-animation{
+    from{
+        -webkit-transform: translatex(80px);
+                transform: translatex(80px);
+    }
+    to{
+        -webkit-transform: translatex(0);
+                transform: translatex(0);
+    }
 }
 
 @keyframes order-animation{
     from{
-        transform: translatex(80px);
+        -webkit-transform: translatex(80px);
+                transform: translatex(80px);
     }
     to{
-        transform: translatex(0);
+        -webkit-transform: translatex(0);
+                transform: translatex(0);
     }
 }
 
@@ -362,16 +438,30 @@ i.fa-facebook-f:hover{
 
 /*start more animation*/
 .works .overlay-dad:hover  .overlay .overlay-content div:last-of-type{
-    animation: more-animation .6s ease-in-out;
+    -webkit-animation: more-animation .6s ease-in-out;
+            animation: more-animation .6s ease-in-out;
     
+}
+
+@-webkit-keyframes more-animation{
+    from{
+        -webkit-transform: translatey(80px);
+                transform: translatey(80px);
+    }
+    to{
+        -webkit-transform: translatey(0);
+                transform: translatey(0);
+    }
 }
 
 @keyframes more-animation{
     from{
-        transform: translatey(80px);
+        -webkit-transform: translatey(80px);
+                transform: translatey(80px);
     }
     to{
-        transform: translatey(0);
+        -webkit-transform: translatey(0);
+                transform: translatey(0);
     }
 }
 
@@ -440,8 +530,12 @@ i.fa-facebook-f:hover{
     height: 90px;
 }
 .contact .contact-content .info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #fff;
     margin-bottom: 7px;
 }
@@ -477,6 +571,8 @@ i.fa-facebook-f:hover{
     border-top: 2px solid limegreen;
     border-bottom: 2px solid limegreen;
     border-left: 2px solid limegreen;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -486,8 +582,13 @@ i.fa-facebook-f:hover{
 }
 @media (max-width:767.98px){
     .contact .contact-content .info{
-        flex-direction: column;
-        align-items:center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
     }
 }
 @media (max-width: 575.98px){
@@ -500,54 +601,114 @@ i.fa-facebook-f:hover{
 /*Start Footer*/
 
 footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
     height: 80px;
     background-color: rgba(23,22,23,1);
     color: #fff;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0;
 }
 footer i{
-    animation-name: heart;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transform-origin: center;
+    -webkit-animation-name: heart;
+            animation-name: heart;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}
+@-webkit-keyframes heart{
+    0%{
+        color: red;
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    20%{
+        color: limegreen;
+        -webkit-transform: scale(0,0);
+                transform: scale(0,0);
+    }
+    40%{
+        color: darkblue;
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    60%{
+        color:darkmagenta;
+        -webkit-transform: scale(0,0);
+                transform: scale(0,0);
+    }
+    80%{
+        color:yellow;
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    90%{
+        color:darkturquoise;
+        -webkit-transform: scale(0,0);
+                transform: scale(0,0);
+    }
+    100%{
+        color:brown;
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+    }
 }
 @keyframes heart{
     0%{
         color: red;
-        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
     }
     20%{
         color: limegreen;
-        transform: scale(0,0);
+        -webkit-transform: scale(0,0);
+                transform: scale(0,0);
     }
     40%{
         color: darkblue;
-        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
     }
     60%{
         color:darkmagenta;
-        transform: scale(0,0);
+        -webkit-transform: scale(0,0);
+                transform: scale(0,0);
     }
     80%{
         color:yellow;
-        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
     }
     90%{
         color:darkturquoise;
-        transform: scale(0,0);
+        -webkit-transform: scale(0,0);
+                transform: scale(0,0);
     }
     100%{
         color:brown;
-        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+                transform: scale(1,1);
     }
 }
 footer a{
     color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 footer a:hover{
